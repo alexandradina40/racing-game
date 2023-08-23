@@ -9,4 +9,6 @@ public class Car {
     int doorCar;
     boolean damage;
     String Color;
+
+    Engine engine; // pt ca masina are un motor;
 }
