@@ -26,7 +26,6 @@ public class App
       engine1.manufacturer="Ferrari";
       engine1.capacity=3000;
 
-      carReference.engine=engine1;
 
       Car car2= new Car();
       car2.name="Renault";
