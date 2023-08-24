@@ -7,8 +7,22 @@ package org.example;
 public class App 
 {
     public static void main( String[] args )
-    { Game game= new Game();
-      game.start();
+    {
+        //Game game= new Game();
+      //game.start();
+        Vehicle vehicle1=new Vehicle();
+        vehicle1.name="Dacia";
+
+
+
+        Vehicle vehicle2=new Vehicle();
+        vehicle2.name="Lada";
+
+
+
+        System.out.println("Total count of vehicle "+ vehicle1.name +" : " + vehicle1.totalVehicleCount);
+        System.out.println("Total count of vehicle "+ vehicle2.name +" : " + vehicle2.totalVehicleCount);
+        System.out.println("Total count of vehicle "+ Vehicle.totalVehicleCount);
 
 //      Engine enginereference=new Engine();
 //      Car carReference = new Car(enginereference); // cream obiect nou , real, constructor

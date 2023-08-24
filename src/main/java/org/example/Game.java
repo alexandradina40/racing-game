@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Game
 {
-    ScannerUtilis scaner=new ScannerUtilis();
+
     public void start()
     {
 
@@ -21,13 +21,13 @@ public class Game
     {
         System.out.println("Please enter number of players");
        // Scanner scanner=new Scanner(System.in); // to read from keyboard
-        return scaner.nextIntandMoveToNextLine(); // we will read an int value
+        return ScannerUtilis.nextIntandMoveToNextLine(); // we will read an int value
     }
 
     private String get_VehicleName_FromUser()
     {
         System.out.println("Please enter vehicle name ");
        // Scanner scanner1=new Scanner(System.in);
-        return scaner.nextLine(); // we will read a string
+        return ScannerUtilis.nextLine(); // we will read a string
     }
 }

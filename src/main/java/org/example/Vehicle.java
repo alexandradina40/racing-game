@@ -1,7 +1,14 @@
 package org.example;
 
+import java.time.LocalDate;
+
 public class Vehicle
 {
+    // class variable(static)
+    static int totalVehicleCount; // it save only the last value
+
+
+    // instance variables
     String name;
     double fuelLevel;
     double mileage;
@@ -10,7 +17,11 @@ public class Vehicle
     boolean damage;
     String Color;
 
+    LocalDate manufactureyear=LocalDate.now();
 
+    public Vehicle(){
+        totalVehicleCount++;
+    }
 
     public double accelerate(double speed,double durationInHours)
     { // Ferrari is accelerating with 100km/h for 1h

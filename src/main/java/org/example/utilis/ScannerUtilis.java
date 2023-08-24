@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class ScannerUtilis
 {
-    Scanner scaner=new Scanner(System.in);
-    public int nextIntandMoveToNextLine()
+    static final Scanner scaner=new Scanner(System.in);
+    public static int nextIntandMoveToNextLine()
     {
         int integer=scaner.nextInt();
         scaner.nextLine(); // to move the next line
         return integer;
     }
-    public String nextLine()
+    public static String nextLine()
     {
         return scaner.nextLine();
     }
