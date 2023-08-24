@@ -36,6 +36,17 @@ public class App
       System.out.println("Fuel level "+ car2.fuelLevel);
       System.out.println("Total Distance of car2 " + car2.totalTraveledDistance);
 
-      carReference.name="Audi";
+
+      double distance_for_car1=carReference.accelerate(60,1);
+      double distance_for_car2 = car2.accelerate(100, 1);
+
+        if(distance_for_car1>distance_for_car2)
+        {
+          System.out.println("Longest distance: "+carReference.name);
+
+        }else
+        {
+          System.out.println("Longest distance: "+car2.name);
+        }
     }
 }
