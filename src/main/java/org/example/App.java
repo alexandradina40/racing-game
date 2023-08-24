@@ -26,6 +26,7 @@ public class App
       engine1.manufacturer="Ferrari";
       engine1.capacity=3000;
 
+      carReference.engine=engine1;
 
       Car car2= new Car();
       car2.name="Renault";
@@ -48,5 +49,8 @@ public class App
         {
           System.out.println("Longest distance: "+car2.name);
         }
+      System.out.println("Engine name before repair:" + carReference.engine.manufacturer);
+        Mechanic mechanic=new Mechanic();
+        mechanic.repair(carReference);
     }
 }

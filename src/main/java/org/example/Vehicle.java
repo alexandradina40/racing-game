@@ -10,6 +10,8 @@ public class Vehicle
     boolean damage;
     String Color;
 
+
+
     public double accelerate(double speed,double durationInHours)
     { // Ferrari is accelerating with 100km/h for 1h
         System.out.println(name+ " is accelerating with "+ speed + " for " + durationInHours + " h");
